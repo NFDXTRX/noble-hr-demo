@@ -1,12 +1,12 @@
 # Noble Foods HR Service Hub
 
-An interactive proposal for a Freshservice HR ticketing experience. This is a standalone website mockup using fictional records. It is not connected to any HR, payroll, Microsoft or Freshservice system.
+An interactive Freshservice-style HR ticketing mockup. This is a standalone website mockup using fictional records. It is not connected to any HR, payroll, Microsoft or Freshservice system.
 
 ## Explore the site
 
 Open `index.html` in a modern browser, or publish this folder with GitHub Pages. No installation or build is needed. All links and assets use relative paths, including when the site runs beneath a repository name.
 
-Start with **Try the employee journey**, or use **Start guided pay example** on the proposal page.
+Start on the employee portal and choose a request type.
 
 1. Choose a service and select **Load example**.
 2. Review and submit the fictional request.
@@ -40,7 +40,6 @@ Follow [DEPLOY-TO-GITHUB.md](DEPLOY-TO-GITHUB.md). Use an approved work organisa
 - `app.js`: forms, demo tickets, conversations and reporting
 - `logo.png`: supplied Noble Foods logo
 - `colleagues.jpg`: AI-generated illustration of fictional colleagues
-- `proposal.pptx`: click-through PowerPoint proposal
 - `.nojekyll`: disables Jekyll processing when uploaded
 
 ## Editing

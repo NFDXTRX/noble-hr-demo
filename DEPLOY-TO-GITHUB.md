@@ -28,7 +28,7 @@ The Pages website may be publicly accessible even when its source repository is 
 
 1. Unzip `Noble-Foods-HR-Website-GitHub.zip` on your computer.
 2. In the repository, choose **uploading an existing file**, or **Add file > Upload files**.
-3. Upload the **contents** of the unzipped folder, including the logo, image and PowerPoint files.
+3. Upload the **contents** of the unzipped folder, including the logo and image files.
 4. Make sure `index.html`, `style.css` and `app.js` appear directly in the repository root. Do not nest them inside an extra folder.
 5. Commit the uploaded files to `main`.
 
@@ -56,7 +56,7 @@ Check that:
 - Review and submission create a fictional ticket.
 - HR can assign, reply and resolve.
 - Switching to the employee view hides the private note text from the conversation screen.
-- The PowerPoint and CSV downloads work.
+- The CSV reporting download works.
 
 Copy the exact published address into your email to the team. Each visitor gets their own demo data, so people can explore without altering anyone else's session.
 
