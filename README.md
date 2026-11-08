@@ -22,7 +22,7 @@ The request catalogue includes weekly and salaried pay, new starter documents, p
 
 - Use fictional information only.
 - Requests and changes stay in the current browser tab using session storage. They are not shared with other visitors.
-- File attachments are example filenames. No files are uploaded or read.
+- Selected attachments retain filenames and sizes only. File contents are never read or uploaded. The six linked sample PDFs are public fictional examples.
 - Messages and approvals are simulated. No email is sent.
 - Employee and HR views demonstrate a proposed experience. They are not authenticated roles or security controls.
 - Private note text stays out of the employee conversation screen, but all demo data remains accessible in the browser. Do not use real confidential information.
@@ -37,7 +37,10 @@ Follow [DEPLOY-TO-GITHUB.md](DEPLOY-TO-GITHUB.md). Use an approved work organisa
 
 - `index.html`: page structure
 - `style.css`: branding and responsive layout
-- `app.js`: forms, demo tickets, conversations and reporting
+- `app.js`: request forms, demo tickets, conversations and reporting
+- `forms.js`: forms library, digital records and attachment metadata
+- `form-*.pdf`: five printable sample forms
+- `example-overtime-completed.pdf`: fictional completed overtime record
 - `logo.png`: supplied Noble Foods logo
 - `colleagues.jpg`: AI-generated illustration of fictional colleagues
 - `.nojekyll`: disables Jekyll processing when uploaded
@@ -55,3 +58,18 @@ https://www.freshworks.com/freshservice/business-teams/hr/
 https://support.freshservice.com/support/solutions/articles/50000003768-get-started-onboarding-your-hr-teams-on-freshservice-fsbt
 
 These are proposed layouts rather than screenshots of a configured Freshservice tenant. Features, permissions, licence requirements, records retention and integrations need validation before a live HR service.
+
+## HR workspace and documents
+
+Priority and due-by dates are manually editable in the team queue and ticket. An unresolved request is automatically flagged after more than 72 elapsed hours from receipt, including weekends and waiting time. A past due date is a separate flag.
+
+Reporting shows received/processed tickets over the last seven UK calendar dates, average elapsed processing and first-response hours for recently resolved tickets, current status and open-request age. Unknown timestamps are excluded from averages. Reopening removes a ticket from completed totals until it is resolved again.
+
+Forms & documents contains five sample templates with digital and paper routes. Digital answers remain structured on the ticket; no PDF is generated automatically. The paper route requires a completed scan example. The local file selector demonstrates up to five PDF/JPG/PNG files of 10 MB each, storing metadata only. These demo limits are not a statement of Freshservice limits.
+
+These are illustrative templates, not approved Noble Foods documents. Typed names and checkboxes are not verified signatures or approvals. In Freshservice, use Service Catalog fields for digital answers, controlled PDF links for paper templates, attachment controls for scans and a separately configured approval process. Confirm subscription, portal version, permissions and document handling before implementation. Dedicated custom Attachment fields require the V2 requester portal.
+
+Official references:
+https://support.freshservice.com/support/solutions/articles/199643-configure-the-service-catalog
+https://support.freshservice.com/support/solutions/articles/50000012680-custom-field-types-for-service-catalog-items
+https://support.freshservice.com/support/solutions/articles/50000000619-can-i-make-attachments-mandatory-for-a-service-item-
